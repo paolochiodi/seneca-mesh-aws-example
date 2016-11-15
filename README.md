@@ -18,7 +18,7 @@ There are three different services:
 
 ## How it works
 
-seneca-base serves the sole purpose of being the knwon node of the swim network so that any additional node needs to know only this one in order to connect.
+seneca-base serves the sole purpose of being the knwon node of the swim network so that we always have one stable node across redeploys.
 
 seneca-implementation instances connect to the network initiated by seneca-base and advertise themself as the implementor of `cmd:test` messages
 
