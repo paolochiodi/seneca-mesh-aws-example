@@ -9,7 +9,8 @@ const seneca = Seneca()
 })
 
 seneca.use('mesh-aws', {
-  aws: {region: 'eu-central-1'}
+  aws: {region: 'eu-central-1'},
+  pin: 'cmd:test'
 })
 
 
