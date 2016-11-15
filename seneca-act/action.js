@@ -5,7 +5,8 @@ const seneca = Seneca()
 seneca.ready(function () {
 
   seneca.use('mesh', {
-    bases: ['172.31.3.213:39000']
+    bases: ['172.31.3.213:39000'],
+    host: '172.31.1.241'
   })
 
   const Hapi = require('hapi')
