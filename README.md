@@ -19,7 +19,9 @@ There are three different services:
 ## How it works
 
 seneca-base serves the sole purpose of being the knwon node of the swim network so that any additional node needs to know only this one in order to connect.
+
 seneca-implementation instances connect to the network initiated by seneca-base and advertise themself as the implementor of `cmd:test` messages
+
 seneca-act instances connects to the network too and receive from one of the other nodes the description of the network with the knoledge that the seneca-implementation instances implement `cmd:test`.
 
 Both seneca-implementation and seneca-act are able to connect to seneca-base by obtaining it's ip address through aws sdk.
