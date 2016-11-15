@@ -2,11 +2,11 @@
 const Seneca = require('seneca')
 const seneca = Seneca()
 
-seneca.ready(function () {
+seneca.use('mesh-aws', {
+  aws: {region: 'eu-central-'}
+})
 
-  seneca.use('mesh-aws', {
-    aws: {region: 'eu-central-1'}
-  })
+seneca.ready(function () {
 
   const Hapi = require('hapi')
 

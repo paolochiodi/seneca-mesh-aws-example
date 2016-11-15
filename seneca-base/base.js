@@ -4,16 +4,12 @@ const Seneca = require('seneca')
 
 const seneca = Seneca()
 
-.add({cmd: 'test', action: 'hello'}, function (msg, done) {
-  done(null, {answer: 'world!'})
+seneca.use('mesh-aws', {
+  aws: {region: 'eu-central-1'},
+  base: true,
+  pin: 'cmd:test',
 })
 
 seneca.ready(function () {
-  seneca.use('mesh-aws', {
-    aws: {region: 'eu-central-1'},
-    base: true,
-    pin: 'cmd:test',
-  })
-
   console.log('Seneca up and running')
 })
