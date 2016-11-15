@@ -1,0 +1,16 @@
+{
+  "name": "seneca-mesh-aws-implementation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "implementation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "seneca": "^3.2.2",
+    "seneca-balance-client": "^0.6.0",
+    "seneca-mesh-aws": "https://github.com/paolochiodi/seneca-mesh-aws.git"
+  }
+}
